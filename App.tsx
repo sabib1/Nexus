@@ -15,9 +15,9 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div className="bg-[#131314] text-white min-h-screen flex flex-col font-sans antialiased overflow-hidden">
+    <div className="bg-[#131314] text-white min-h-screen flex flex-col font-sans antialiased">
       <Header />
-      <main className="flex-grow flex flex-col items-center justify-center p-4 w-full max-w-4xl mx-auto">
+      <main className="flex-grow flex flex-col items-center justify-center p-4 w-full max-w-4xl mx-auto pb-24">
         <div className="flex-grow flex items-center w-full">
             <div className={`w-full transition-opacity duration-1000 ease-in-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
               <h1 className="text-4xl md:text-5xl font-medium text-zinc-400 mb-10 leading-tight">
@@ -40,8 +40,10 @@ const App: React.FC = () => {
               </div>
             </div>
         </div>
-        <InputBar />
       </main>
+      <div className="fixed bottom-0 left-0 right-0 bg-[#131314]">
+        <InputBar />
+      </div>
     </div>
   );
 };
