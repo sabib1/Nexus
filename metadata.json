@@ -1,0 +1,5 @@
+{
+  "name": "Gemini UI Clone",
+  "description": "A visually stunning and animated replica of the Gemini AI chat interface, built with React and Tailwind CSS. It features a sleek, modern design with a dark theme, suggestion cards, and a responsive layout.",
+  "requestFramePermissions": []
+}
